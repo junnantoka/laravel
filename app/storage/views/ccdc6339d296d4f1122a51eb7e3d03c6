@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title><?php echo $__env->yieldContent('title'); ?></title>
+		<?php $__env->startSection('head'); ?>
+			<link href="<?php echo URL::asset('_css/main.css'); ?>" rel="stylesheet" media="screen, projection">
+		<?php echo $__env->yieldSection(); ?>
+	</head>
+	<body>
+        <?php echo $__env->yieldContent('header'); ?>
+		<?php echo $__env->yieldContent('body'); ?>
+	</body>
+</html>
